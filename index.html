@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة التحويل المميزة</title>
+    <title>صفحة التحويل السريع</title>
     <style>
         /* خلفية مميزة وحديثة */
         body {
@@ -12,7 +12,6 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
         }
-        /* يمكنك تخصيص المزيد من الأساليب حسب ذوقك */
     </style>
 </head>
 <body>
@@ -20,19 +19,17 @@
     <p>...يتم تحويلك إلى وجهتك...</p>
 
     <script>
-        // هذا السكريبت يحتوي على وظيفتي البوب أندر والتحويل
+        // 1. محاولة فتح نافذة/علامة تبويب جديدة على الفور
+        // **ملاحظة:** قد يتم حظر هذه العملية تلقائياً بواسطة المتصفحات الحديثة.
+        const newWindow = window.open('https://xpsvp.blogspot.com/p/psvp.html', '_blank');
         
-        // 1. إدراج كود الإعلانات (Pop-under)
-        const popunderCode = `
-            <script type='text/javascript' src='//moundconclusive.com/35/14/6b/35146bec0fef66ac6b404e3f6de32ae9.js'></script>
-        `;
-        
-        // حقن الكود في الصفحة لتفعيله
-        const popunderDiv = document.createElement('div');
-        popunderDiv.innerHTML = popunderCode;
-        document.body.appendChild(popunderDiv);
+        // محاولة التركيز على النافذة الجديدة (قد يساعد في تجاوز بعض أساليب الحظر)
+        if (newWindow) {
+             newWindow.focus();
+        }
 
-        // 2. تحويل المستخدم بعد تأخير 3 ثوانٍ
+
+        // 2. تحويل الصفحة الحالية بعد تأخير 3 ثوانٍ
         setTimeout(function() {
             window.location.href = 'https://moundconclusive.com/aw48bead?key=a867c2a0f7f908e6c7c2c411be52daac';
         }, 3000); // تأخير 3000 ميلي ثانية = 3 ثوانٍ
