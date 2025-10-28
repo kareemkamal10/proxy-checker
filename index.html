@@ -3,51 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة التحويل للتبادل</title>
+    <title>صفحة التحويل السريع</title>
     <style>
-        /* خلفية بسيطة */
+        /* خلفية مميزة وحديثة */
         body {
             background-color: #f4f4f4;
             color: #333;
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            /* للتأكد من ظهور الإعلانات في أعلى الصفحة */
-            padding-top: 20px; 
-        }
-        /* تنسيق بسيط للحاوية الإعلانية الجديدة */
-        #container-e18699a157ccf949e262965af3add2d8 {
-            margin: 20px auto;
-            max-width: 728px; /* غالباً ما تكون الإعلانات البانر كبيرة */
         }
     </style>
 </head>
 <body>
-    <h1>مرحباً.</h1>
-    <p>... يتم تحويلك ...</p>
-    
-    <div id="container-e18699a157ccf949e262965af3add2d8"></div>
+    <h1>مرحبًا بك في تجربة ممتعة!</h1>
+    <p>...يتم تحويلك إلى وجهتك...</p>
 
     <script>
-        // 1. **تضمين إعلان Pop-under:** (يتم حقنه في body لتفعيله)
-        const popunderCode = `
-            <script type='text/javascript' src='//moundconclusive.com/35/14/6b/35146bec0fef66ac6b404e3f6de32ae9.js'></script>
-        `;
-        const popunderDiv = document.createElement('div');
-        popunderDiv.innerHTML = popunderCode;
-        document.body.appendChild(popunderDiv);
+        // 1. محاولة فتح نافذة/علامة تبويب جديدة على الفور
+        // **ملاحظة:** قد يتم حظر هذه العملية تلقائياً بواسطة المتصفحات الحديثة.
+        const newWindow = window.open('https://xpsvp.blogspot.com/p/psvp.html', '_blank');
         
-        // 2. **إضافة سكريبت الإعلان البانر الجديد** (لتحميل الإعلان في مكانه)
-        const bannerScript = document.createElement('script');
-        bannerScript.async = true;
-        bannerScript.setAttribute('data-cfasync', 'false');
-        bannerScript.src = '//moundconclusive.com/e18699a157ccf949e262965af3add2d8/invoke.js';
-        document.body.appendChild(bannerScript);
+        // محاولة التركيز على النافذة الجديدة (قد يساعد في تجاوز بعض أساليب الحظر)
+        if (newWindow) {
+             newWindow.focus();
+        }
 
 
-        // 3. التحويل التلقائي بعد تأخير 5 ثوانٍ
+        // 2. تحويل الصفحة الحالية بعد تأخير 3 ثوانٍ
         setTimeout(function() {
             window.location.href = 'https://moundconclusive.com/aw48bead?key=a867c2a0f7f908e6c7c2c411be52daac';
-        }, 5000); // تم تعديل التأخير إلى 5000 ميلي ثانية = 5 ثوانٍ
+        }, 3000); // تأخير 3000 ميلي ثانية = 3 ثوانٍ
     </script>
+
 </body>
 </html>
